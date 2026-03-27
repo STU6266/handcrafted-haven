@@ -1,0 +1,151 @@
+.main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.filtersTitle {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.filterGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.input,
+.select {
+  padding: 0.7rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+}
+
+.input:focus,
+.select:focus,
+.button:focus,
+.link:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.button {
+  border: 1px solid #0f172a;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  background: #0f172a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  background: #fff;
+  color: #0f172a;
+}
+
+.resultsSummary {
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.imageFrame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  background: #f3f3f3;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardTitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  margin: 0 0 0.5rem;
+}
+
+.description {
+  margin-bottom: 0.75rem;
+}
+
+.link {
+  color: #1d4ed8;
+  text-underline-offset: 2px;
+}
+
+.backLinkWrap {
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .filters {
+    padding: 0.9rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
