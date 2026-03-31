@@ -4,26 +4,33 @@
 **Time:** 19:00–20:00 (UTC+1)
 
 ## Participants
-- Name 1
-- Name 2
-- Name 3
-- Name 4 
-- Name 5 
+- Daniel Olayinka Oyeniyi
+- Olaniyi Bello
+- Steven Kemendics 
 
 ## What We Discussed 
-
+- Reviewed progress up to Week 3 requirements.
+- Checked authentication and product API status.
+- Reviewed merge conflicts and repository state.
+- Looked at remaining tasks for the final week.
 
 ## What We Completed Today
-
+- Confirmed Products API routes are working (GET, GET by ID, POST, PUT, DELETE).
+- Verified authentication and seller authorization logic.
+- Resolved merge conflicts in product routes.
+- Confirmed MongoDB connection and Vercel deployment are working.
+- Reviewed validation and error handling.
 
 ## Decisions Made
-
+- Keep detailed validation logic in product routes.
+- Maintain ownership checks for update and delete operations.
+- Focus final week on testing, cleanup, and rubric alignment.
 
 ## Action Items (Next Steps)
-- Person: Task – Due date
-- Person: Task – Due date
-- Person: Task – Due date
+- Daniel: Finalize backend validation and review API consistency.
+- Olaniyi: Test frontend integration and edge cases.
+- Steven: Review error handling, testing, and deployment stability.
 
 ## Next Meeting
 **Date:** 09.04.2026   
-**Next group leader:**  
+**Next group leader:**  Daniel/Olaniyi
