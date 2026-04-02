@@ -32,8 +32,6 @@ export default function Home() {
             Meet Sellers
           </Link>
         </div>
-
-        <p className={styles.note}>Note: Catalog/Sellers pages will be added next.</p>
       </section>
 
       {/* How it works */}

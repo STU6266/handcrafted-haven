@@ -33,4 +33,4 @@
 
 ## Next Meeting
 **Date:** 09.04.2026   
-**Next group leader:**  Daniel/Olaniyi
+**Next group leader:**  Olaniyi
