@@ -15,23 +15,29 @@ export async function GET(request: NextRequest) {
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '10');
 
-    const query: any = {};
+    const filter: {
+      category?: string;
+      price?: {
+        $gte?: number;
+        $lte?: number;
+      };
+    } = {};
 
-    if (category) query.category = category;
+    if (category) filter.category = category;
 
     if (minPrice || maxPrice) {
-      query.price = {};
-      if (minPrice) query.price.$gte = parseFloat(minPrice);
-      if (maxPrice) query.price.$lte = parseFloat(maxPrice);
+      filter.price = {};
+      if (minPrice) filter.price.$gte = parseFloat(minPrice);
+      if (maxPrice) filter.price.$lte = parseFloat(maxPrice);
     }
 
-    const products = await Product.find(query)
+    const products = await Product.find(filter)
       .populate('sellerId', 'name')
       .sort({ createdAt: -1 })
       .skip((page - 1) * limit)
       .limit(limit);
 
-    const total = await Product.countDocuments(query);
+    const total = await Product.countDocuments(filter);
 
     return NextResponse.json({
       products,
