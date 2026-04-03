@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
       .skip((page - 1) * limit)
       .limit(limit);
 
-    const total = await Product.countDocuments(query);
+    const total = await Product.countDocuments(filter);
 
     return NextResponse.json({
       products,
