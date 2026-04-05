@@ -137,7 +137,7 @@ export default function DashboardClient() {
   }
 
   return (
-    <main className={styles.main}>
+    <main id="main-content" className={styles.main}>
       <div className={styles.pageHeader}>
         <div>
           <h1>Seller Dashboard</h1>
@@ -158,8 +158,17 @@ export default function DashboardClient() {
           your store.
         </p>
 
-        {errorMessage && <p className={styles.errorText}>{errorMessage}</p>}
-        {successMessage && <p className={styles.successText}>{successMessage}</p>}
+        {errorMessage && (
+          <p className={styles.errorText} role="alert">
+            {errorMessage}
+          </p>
+        )}
+
+        {successMessage && (
+          <p className={styles.successText} aria-live="polite">
+            {successMessage}
+          </p>
+        )}
 
         {loading ? (
           <p className={styles.emptyState}>Loading your products...</p>

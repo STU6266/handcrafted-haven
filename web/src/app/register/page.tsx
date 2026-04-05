@@ -20,5 +20,9 @@ export default async function RegisterPage() {
     redirect("/catalog");
   }
 
-  return <RegisterForm />;
+  return (
+    <main id="main-content">
+      <RegisterForm />
+    </main>
+  );
 }

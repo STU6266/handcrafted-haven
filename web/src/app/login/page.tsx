@@ -20,5 +20,9 @@ export default async function LoginPage() {
     redirect("/catalog");
   }
 
-  return <LoginForm />;
+  return (
+    <main id="main-content">
+      <LoginForm />
+    </main>
+  );
 }
