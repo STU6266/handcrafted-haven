@@ -1,36 +1,90 @@
 # Handcrafted Haven
 
-Handcrafted Haven is a website where artisans can show and sell handmade products.  
-Users can browse items, filter products, and read details about each product.  
-Sellers can create product listings and share a short story about their work.
+Handcrafted Haven is a school team project for a marketplace-style web app where artisans can present handmade products and users can browse product listings.
 
-## What the App Should Do
-- Seller Profiles: Sellers have a profile page with a short bio/story and their products.
-- Product Listings: Sellers can add products with a description, price, category, and images.
-- Browse & Filter: Users can browse all products and filter by category and price range.
-- Reviews & Ratings: Any user can leave a star rating (1–5) and a written review.
-- Good Web Standards: The site should be responsive, accessible WCAG 2.1 AA basics, easy to use, and SEO friendly.
+This README describes the project honestly as a team project. My main contribution was not building every feature alone, but helping with integration, deployment support, cleanup, accessibility/usability improvements, smoke checks, small bug fixes and project coordination toward the final version.
 
-## Tools / Technology
-- Front-End: Next.js (HTML, CSS, JavaScript)
-- Back-End: Node.js + a database 
-- Project Board: GitHub Projects
-- Deployment: Vercel
+## Live Site
 
-## Links
-- GitHub Repo: https://github.com/STU6266/handcrafted-haven
-- Vercel Site: https://handcrafted-haven-blush.vercel.app/
+```text
+https://handcrafted-haven-blush.vercel.app/
+```
 
-## Team Members
-- <Name 1>Daniel Olayinka Oyeniyi
-- <Name 2>Olaniyi Bello
-- <Name 3>steven kemendics
+## Repository
 
+```text
+https://github.com/STU6266/handcrafted-haven
+```
 
-## How to Run Locally
-1. Clone the repository
-2. Open it in VS Code
-3. Run the web app:
-   - `cd web`
-   - `npm install`
-   - `npm run dev`
+## Project Goal
+
+The goal was to build a small marketplace experience for handmade products. Users should be able to discover items, read product details and understand the seller behind the product.
+
+Planned/project scope included:
+
+- seller profiles with short stories or bios
+- product listings with description, price, category and images
+- browse and filter experience
+- product reviews and ratings
+- responsive layout
+- basic accessibility and usability improvements
+- deployment to Vercel
+
+## My Role
+
+My contribution focused on stabilizing and preparing the team project rather than presenting it as a solo full-stack build.
+
+I worked on:
+
+- integration support between project parts
+- Vercel deployment support
+- project board/tasks and coordination help
+- cleanup of code and content before final delivery
+- small bug fixes
+- accessibility/usability improvements
+- smoke testing important user flows
+- helping the team keep the final version presentable
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Node.js
+- MongoDB / Mongoose
+- CSS
+- Vercel
+- GitHub Projects
+
+## Features
+
+- marketplace-style product browsing
+- product detail pages
+- seller/profile context
+- category and price-oriented discovery flow
+- responsive web layout
+- deployed public version
+
+## Team Context
+
+This was created as a school group project.
+
+Team members listed in the original project context:
+
+- Daniel Olayinka Oyeniyi
+- Olaniyi Bello
+- Steven Kemendics
+
+## Run Locally
+
+```bash
+git clone https://github.com/STU6266/handcrafted-haven.git
+cd handcrafted-haven/web
+npm install
+npm run dev
+```
+
+Open the local development URL shown in the terminal.
+
+## Notes
+
+Because this is a school team project, the README avoids claiming that one person built the whole application. The strongest value of this project in my portfolio is showing collaboration, cleanup, deployment support, testing, coordination and the ability to help bring a team project into a more stable final state.
